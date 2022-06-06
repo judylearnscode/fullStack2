@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dog Spotting</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5429a7e2cf.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="secondpage">
+<div class="container">
+
+    <div class="page-header text-center">
+        <img src="img/logo2.png" alt="dogspotting logo">
+    </div>
+    <a href="/logout" class="btn btn-default btn-sm" id="logout">Log Out</a>
+    <div class="introText">
+        <p>Ever see an adorable pup in the wild and don't have anyone to share it with? Not anymore!</p>
+        <p>Share your cutest dog pictures and descriptions with other Dog Spotters around the world!</p></div>
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->        
+          <h2>Share a Dog Spot!</h2>
+          <form method="post" enctype="multipart/form-data" action="/upload" class="uploadHere">
+            <input type="file" name="profileImg" class="pupPix">
+            <input type="text" class="dogDays" placeholder="Enter a Dog Description" name="msg">
+            <input type="text" name="name" id="" placeholder="Enter name" required>
+            <input type="submit" value="Submit" class="submit" >
+        </form>
+        </div>
+
+        <div class="pupPix1">
+            <ul class="messages">
+  <% for(var i=0; i<messages.length; i++) {%>
+    <li class="message">
+      <img class="pupPix" src="<%= messages[i].img %>" alt="">
+      <span><%= messages[i].name %></span>
+      <span><i class="fa-solid fa-heart" aria-hidden="true"></i></span>
+      <a href="/delete"><i class="fa-solid fa-trash-can"></i></a>
+    </li>
+  <% } %>
+  </ul>
+
+
+</div>
+
+<script src="main.js" type="text/javascript"></script>
+
+</body>
+</html>
+
+

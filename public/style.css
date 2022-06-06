@@ -1,0 +1,69 @@
+*{ 
+    text-align: center;
+}
+body{
+    padding-top:80px;
+    word-wrap:break-word;
+    background-image: url(img/bg.jpg);
+    background-repeat: repeat;
+    color: rgb(171, 81, 11);
+    font-family: "Josefin Sans", "Futura", "sans-serif";
+    text-align: center;
+  }
+
+  input {
+    font-family: "Josefin Sans", "Futura", "sans-serif";
+  }
+  
+  h1{
+    font-size: 3em;
+    font-weight: 500;
+    font-family: "Josefin Sans", "Futura", "sans-serif";
+  }
+  span, p{
+    font-size: 1.5em;
+    font-family: "Josefin Sans", "Futura", "sans-serif";
+  }
+  h2, h3{
+    font-size: 2em;
+    font-family: "Josefin Sans", "Futura", "sans-serif";
+  }
+  
+  .beep {
+    border-radius: 10px;
+    display:flex;
+    text-align:center;
+}
+
+  .pupPix{
+      text-align: center;
+      padding: 2%;
+      padding-left: 10%;
+  }
+
+  .dogDays{
+      height: 100px;
+  }
+ 
+  .introText {
+      font-size: 12px;
+      padding-top: 2%;
+  }
+
+  form, input, li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+    .pupPix1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottomHalf {
+      margin-top: 20px;
+  }
