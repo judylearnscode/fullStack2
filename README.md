@@ -1,13 +1,7 @@
-## Installation
+#Dog Spotting App
 
-1. Clone repo
-2. run `npm install`
+A full-stack application that lets users share dog photos and descriptions.
 
-## Usage
+<img width="1316" alt="Screen Shot 2022-06-05 at 10 27 56 PM" src="https://user-images.githubusercontent.com/66283743/172084866-1a603fc9-0942-4c93-9965-9db767faeb2c.png">
 
-1. run `node server.js`
-2. Navigate to `localhost:8080`
-
-## Credit
-
-Modified from Scotch.io's auth tutorial
+languages used: html5, css, mongodb, node.js, javascript
